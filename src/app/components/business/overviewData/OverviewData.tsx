@@ -16,7 +16,7 @@ export const OverviewPage = () => {
 			<div className="dashBG z-[-10]"></div>
 			<div className="flex flex-col">
 				<h2 className="text-black font-semibold text-[22px]">Welcome, Bambii</h2>
-				<p className="mb-2">Here's what's happening with your store today.</p>
+				<p className="mb-2">Here&apos;s what&apos;s happening with your store today.</p>
 				<div className="cardWalletWrapper2">
 					<CardWallet2 title="Total Sales" icon={<DollarSign className="w-[12.5px] text-red-700 h-[12.5px]" />} icon2={<ArrowDownLeft className="w-full h-full text-white" />} header="₦391,820.75" price="$67k" percent="21.9" />
 					<CardWallet2 title="Wallet Balance" icon={<Wallet className="w-[12.5px] text-red-700 h-[12.5px]" />} icon2={<ArrowDownLeft className="w-full h-full text-white" />} header="₦391,820.75" price="$67k" percent="21.9" />
@@ -91,7 +91,7 @@ export const OverviewPage = () => {
 						<h2>Recent activity</h2>
 						<div className="flex flex-col gap-5">
 							{recentActivityData.map((item) => (
-								<div className="flex items-center gap-3">
+								<div className="flex items-center gap-3" key={item.name}>
 									<Avatar className="align-center">
 										<Avatar>
 											<AvatarImage src={item.image} />

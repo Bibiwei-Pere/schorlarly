@@ -86,7 +86,7 @@ export const ViewStore = () => {
 							<div className="relative max-w-[108px] w-full h-[108px] border-4 border-white bg-red-100 rounded-full shadow-md"></div>
 							<div>
 								<h2 className="flex items-start gap-2">
-									Jason's Art <BadgeCheck fill="#b30909" className="text-white" />
+									Jason&apos;s Art <BadgeCheck fill="#b30909" className="text-white" />
 								</h2>
 								<span className="flex items-center">
 									<p className="text-[12px] font-[400] pr-2 border-r border-gray-200">@jasonarts</p>
