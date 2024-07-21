@@ -14,7 +14,7 @@ import { WelcomeOyoyo } from "@/app/components/business/serviceData/ServiceData"
 const Login = () => {
 	const [loading, setLoading] = useState(false);
 
-	const handleSubmit = (e: any) => {
+	const handleSubmit = (e: { preventDefault: () => void }) => {
 		e.preventDefault();
 		try {
 			setLoading(true);

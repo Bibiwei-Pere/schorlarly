@@ -7,7 +7,6 @@ import Wallet from "../images/wallet.svg";
 import Bookmarks from "../images/bookmarks.svg";
 import Map from "../images/map.svg";
 import MarketPlace from "../images/marketPlace.svg";
-import StoreFront from "../images/storeFront.svg";
 import Support from "../images/support.svg";
 import Subscription from "../images/subscription.svg";
 import Settings from "../images/settings.svg";

@@ -9,7 +9,7 @@ import Background from "@/app/components/authBackground/Background";
 const ResetPwd = () => {
 	const [active, setActive] = useState(false);
 	const [email, setEmail] = useState("");
-	const handleSubmit = (e: any) => {
+	const handleSubmit = (e: { preventDefault: () => void }) => {
 		e.preventDefault();
 		setActive(true);
 
