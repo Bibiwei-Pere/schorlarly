@@ -1,4 +1,4 @@
-import { TicketsPrice, EventHeader, Steps } from "@/app/components/business/eventsData/EventsData";
+import { EventHeader, Steps } from "@/app/components/business/eventsData/EventsData";
 import React from "react";
 
 const TicketPricesPage = () => {
@@ -18,7 +18,7 @@ const TicketPricesPage = () => {
 					<div className="stepsWrapper">
 						<Steps data={ticketsPriceData} />
 					</div>
-					<TicketsPrice />
+					{/* <TicketsPrice /> */}
 				</div>
 			</div>
 		</>

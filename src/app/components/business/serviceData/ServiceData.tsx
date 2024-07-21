@@ -26,7 +26,7 @@ import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { serviceOptions, tagsList } from "../../assets/data/Components";
+import { tagsList } from "../../assets/data/Components";
 import { format } from "date-fns";
 import { CalendarRange } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -207,7 +207,7 @@ export const ListService = () => {
 								</FormItem>
 							)}
 						/>
-						<Tabs defaultValue="Basic" className="w-full">
+						{/* <Tabs defaultValue="Basic" className="w-full">
 							<TabsList className="grid w-full grid-cols-3">
 								{serviceOptions.map((service, index) => (
 									<TabsTrigger value={service.value} key={index}>
@@ -241,7 +241,7 @@ export const ListService = () => {
 									</TabsContent>
 								);
 							})}
-						</Tabs>
+						</Tabs> */}
 						<FormField
 							control={form.control}
 							name="price"
