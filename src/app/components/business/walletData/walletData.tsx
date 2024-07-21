@@ -1,34 +1,28 @@
 "use client";
 import React, { useState } from "react";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import "./Wallet.scss";
-import { title } from "process";
-import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, ErrorModal, SuccessModal } from "@/components/ui/alert-dialog";
-import { Input } from "@/components/ui/input";
+import { ErrorModal } from "@/components/ui/alert-dialog";
 import Arrow from "@/app/components/assets/images/arrow-left-black.svg";
 import Cake from "@/app/components/assets/images/cake1.png";
 import Zac from "@/app/components/assets/images/zac.png";
 import Mastercard from "@/app/components/assets/images/Mastercard.png";
 
-import { TransactionsTable, TransactionTable } from "@/components/ui/TransactionsTable";
-import caldate from "@/app/components/assets/images/caldate.svg";
-import calfill from "@/app/components/assets/images/calfill.svg";
+import { TransactionTable } from "@/components/ui/TransactionsTable";
 import Image from "next/image";
-import { PayoutTable } from "@/components/ui/PayoutTable";
 import { PdisputeTable } from "@/components/ui/PdisputeTable";
 
 import { CardWallet } from "@/components/ui/card";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { ColumnDef, ColumnFiltersState, SortingState, VisibilityState, flexRender, getCoreRowModel, getFilteredRowModel, getPaginationRowModel, getSortedRowModel, useReactTable } from "@tanstack/react-table";
+import { ColumnDef, ColumnFiltersState, SortingState, VisibilityState, getCoreRowModel, getFilteredRowModel, getPaginationRowModel, getSortedRowModel, useReactTable } from "@tanstack/react-table";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { AlertTriangle, CircleCheck, FileDownIcon, LucideMapPin, MoreVertical, PenLineIcon, PrinterIcon, StickyNoteIcon } from "lucide-react";
+import { FileDownIcon, Filter, LucideMapPin, MapPinIcon, MoreVertical, PrinterIcon } from "lucide-react";
 // add wallet data and import
 import Link from "next/link";
 import { Payment } from "../../schema/Types";
+
 export const columns: ColumnDef<Payment>[] = [
 	{
 		id: "select",
@@ -185,16 +179,14 @@ export const Wallet = ({ data }: any) => {
 														</Button>
 													</div>
 												</div>
-												<div className="flex gap-[10px] mt-[30px]">
-													<div className="flex items-center border border-gray-300 rounded-md gap-2 justify-center px-2 py-1 text-sm">
-														<Image src={caldate} alt={caldate} />
-														Last 7 days
-													</div>
-													<div className="flex items-center border border-gray-300 rounded-md gap-2 justify-center px-2 py-1 text-sm">
-														<Image src={calfill} alt={calfill} />
-														Filter
-														<select name="#" id="#"></select>
-													</div>
+												<div className="flex items-center border font-[500] border-gray-300 rounded-lg gap-1.5 justify-center px-2 py-1 text-sm">
+													<MapPinIcon fill="#0F132499" className="text-white" />
+													Last 7 days
+												</div>
+												<div className="flex items-center border font-[500] border-gray-300 rounded-lg gap-1.5 justify-center px-2 py-1 text-sm">
+													<Filter fill="#0F132499" className="text-white" />
+													Filter
+													<select name="#" id="#"></select>
 												</div>
 											</h2>
 											<div>{service.paymentTable}</div>

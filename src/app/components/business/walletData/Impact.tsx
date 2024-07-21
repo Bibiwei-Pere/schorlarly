@@ -34,7 +34,7 @@
 //       </div>
 //       <div className="flex gap-[10px] mt-[30px]">
 //         <div className="flex border rounded-md mr-2 p-1 px-4 ">
-//           <Image src={caldate} alt={caldate} />
+//           <Image src={arrow-left-black} alt={arrow-left-black} />
 //           &nbsp;
 //           <p>Last 7 days </p>
 //         </div>

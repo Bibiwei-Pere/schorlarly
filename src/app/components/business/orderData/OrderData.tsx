@@ -3,7 +3,7 @@ import * as React from "react";
 import { Pagination } from "@/components/ui/pagination";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { ColumnDef, ColumnFiltersState, SortingState, VisibilityState, flexRender, getCoreRowModel, getFilteredRowModel, getPaginationRowModel, getSortedRowModel, useReactTable } from "@tanstack/react-table";
-import { AlertTriangle, CircleCheck, LucideMapPin, MoreVertical, PrinterIcon } from "lucide-react";
+import { CircleCheck, Filter, LucideMapPin, MapPinIcon, MoreVertical, PrinterIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
@@ -14,8 +14,6 @@ import Arrow from "@/app/components/assets/images/arrow-left-black.svg";
 import Cake from "@/app/components/assets/images/cake1.png";
 import Zac from "@/app/components/assets/images/zac.png";
 import Mastercard from "@/app/components/assets/images/Mastercard.png";
-import caldate from "@/app/components/assets/images/caldate.svg";
-import calfill from "@/app/components/assets/images/calfill.svg";
 import "./OrderData.scss";
 import "../eventsData/EventsData.scss";
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, ErrorModal, SuccessModal } from "@/components/ui/alert-dialog";
@@ -154,16 +152,14 @@ export const Orders = ({ data }: any) => {
 
 					<div className="wrapper">
 						<h2>Order history</h2>
-						<div className="flex gap-[10px] mt-[30px]">
-							<div className="flex items-center border border-gray-300 rounded-md gap-2 justify-center px-2 py-1 text-sm">
-								<Image src={caldate} alt={caldate} />
-								Last 7 days
-							</div>
-							<div className="flex items-center border border-gray-300 rounded-md gap-2 justify-center px-2 py-1 text-sm">
-								<Image src={calfill} alt={calfill} />
-								Filter
-								<select name="#" id="#"></select>
-							</div>
+						<div className="flex items-center border font-[500] border-gray-300 rounded-lg gap-1.5 justify-center px-2 py-1 text-sm">
+							<MapPinIcon fill="#0F132499" className="text-white" />
+							Last 7 days
+						</div>
+						<div className="flex items-center border font-[500] border-gray-300 rounded-lg gap-1.5 justify-center px-2 py-1 text-sm">
+							<Filter fill="#0F132499" className="text-white" />
+							Filter
+							<select name="#" id="#"></select>
 						</div>
 						<div className="relative">
 							<div className="max-w-full">

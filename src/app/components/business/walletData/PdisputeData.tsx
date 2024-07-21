@@ -8,8 +8,7 @@ import "./Wallet.scss";
 import { title } from "process";
 import { DataTableDemo } from "@/components/ui/DataTable";
 import { TransactionsTable, TransactionTable } from "@/components/ui/TransactionsTable";
-import caldate from "@/app/components/assets/images/caldate.svg";
-import calfill from "@/app/components/assets/images/calfill.svg";
+import arrow-left-black from "@/app/components/assets/images/arrow-left-black.svg";
 import Image from "next/image";
 import { PayoutTable } from "@/components/ui/PayoutTable";
 import { PdisputeTable } from "@/components/ui/PdisputeTable";
@@ -63,7 +62,7 @@ export const Wallet = () => {
 							</div>
 							<div className="flex gap-[10px] mt-[30px]">
 								<div className="flex border rounded-md mr-2 p-1 px-4 ">
-									<Image src={caldate} alt={caldate} />
+									<Image src={arrow-left-black} alt={arrow-left-black} />
 									&nbsp;
 									<p>Last 7 days </p>
 								</div>
