@@ -15,7 +15,7 @@ const Experience = () => {
 				<Reveal1>
 					<h2>A seamless experience for users</h2>
 				</Reveal1>
-				<p>Navigate through the Dashboard's Rich Features and Enhance Your Productivity.</p>
+				<p>Navigate through the Dashboard&apos;s Rich Features and Enhance Your Productivity.</p>
 			</div>
 			<div className="container">
 				<div className="wrapper1">
