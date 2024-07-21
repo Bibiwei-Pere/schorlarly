@@ -1,0 +1,124 @@
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+.header {
+	position: relative;
+	z-index: 1000;
+	position: fixed;
+	background: transparent;
+
+	top: 0;
+	right: 0;
+	left: 0;
+	&.scroll {
+		max-width: 100%;
+		padding: 10px 0;
+		background-color: $white;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		.container {
+			padding: 10px 33px 0px;
+		}
+		.hamburger {
+			g {
+				fill: $black !important;
+			}
+		}
+	}
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: transparent;
+		max-width: 1300px;
+		padding: 20px 33px;
+		margin: auto;
+		@include md {
+			padding: 20px 18px;
+		}
+
+		.logo {
+			z-index: 10;
+			height: 24px;
+		}
+
+		.navContent {
+			display: flex;
+			gap: 35px;
+
+			a {
+				color: $gray-300;
+				&:hover {
+					color: $black;
+				}
+			}
+		}
+
+		// MOBILE MENU
+		.mobileMenu {
+			display: none;
+		}
+
+		@include lg {
+			.navContent,
+			.getInTouch {
+				display: none;
+			}
+
+			.mobileMenu {
+				display: flex;
+				.close {
+					cursor: pointer;
+					display: none;
+				}
+				.hamburger {
+					cursor: pointer;
+				}
+				&.active {
+					display: flex;
+					.dark_bg {
+						position: absolute;
+						min-height: 100vh;
+						background-color: $gray-300;
+						top: 0;
+						bottom: 0;
+						right: 0;
+						left: 0;
+					}
+					.close {
+						display: flex;
+						z-index: 10;
+					}
+					.hamburger {
+						display: none;
+					}
+					.navContent {
+						display: flex;
+						background: $black;
+						flex-direction: column;
+						position: fixed;
+						top: 0;
+						left: 0;
+						right: 0;
+						gap: 0;
+						padding-top: 100px;
+
+						a {
+							cursor: pointer;
+							border-top: 1px solid $light;
+							padding: 25px 30px;
+							color: $white !important;
+						}
+
+						.getInTouchMobile {
+							font-weight: bold;
+							background: $blue-500;
+							margin: 30px;
+							padding: 15px;
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+	}
+}

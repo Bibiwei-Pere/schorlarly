@@ -1,0 +1,41 @@
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+.features {
+	display: flex;
+	flex-direction: column;
+	padding: 0 30px;
+	max-width: 1280px;
+	margin: auto;
+	position: relative;
+	top: 270px;
+	@include lg {
+		padding: 0 30px;
+	}
+	@include md {
+		top: 215px;
+		padding: 35px 18px;
+	}
+
+	.featuresWrapper {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		align-items: center;
+		gap: 45px;
+		margin: 50px 0;
+		padding: 0;
+		@include lg {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 28px;
+		}
+		@include md {
+			grid-template-columns: 1fr;
+			max-width: 380px;
+			margin: 50px auto;
+		}
+
+		p {
+			text-align: center;
+		}
+	}
+}

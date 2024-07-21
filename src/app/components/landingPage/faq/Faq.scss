@@ -1,0 +1,24 @@
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+.faq {
+	display: flex;
+	flex-direction: column;
+	padding: 40px 30px 30px;
+	max-width: 1280px;
+	margin: auto;
+	position: relative;
+
+	@include md {
+		top: 240px;
+		padding: 20px 18px 0;
+	}
+
+	.faqContainer {
+		margin: 50px auto;
+		max-width: 700px;
+		@include md {
+			margin: 25px auto;
+		}
+	}
+}

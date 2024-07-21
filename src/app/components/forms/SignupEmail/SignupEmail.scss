@@ -1,0 +1,154 @@
+@import "../../styles/responsive.scss";
+@import "../../styles/variables.scss";
+
+.signupEmail {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 0;
+
+	@include sm {
+		padding: 0;
+		.gradient-bg {
+			display: none;
+		}
+	}
+
+	.gradient-bg {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		z-index: -10;
+	}
+	.container {
+		background: $white;
+		max-width: 478px;
+		border-radius: 20px;
+		padding: 30px;
+
+		h2 {
+			font-weight: 700;
+			font-size: 30px;
+			color: $black;
+			margin-top: 20px;
+		}
+
+		.text {
+			color: $black-200;
+			font-weight: 500;
+			margin-bottom: 20px;
+		}
+
+		.btn {
+			color: $red-200;
+			font-weight: 500;
+		}
+
+		.formContainer {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 12px;
+
+			.sub_wrapper {
+				display: grid;
+				gap: 16px;
+				span {
+					display: grid;
+					gap: 14px;
+					grid-template-columns: 1fr 1fr;
+				}
+				label {
+					display: grid;
+					grid-template-columns: 1fr;
+					color: $black;
+					font-weight: 500;
+					gap: 6px;
+					font-size: 14px;
+					div {
+						display: flex;
+						width: 100%;
+						position: relative;
+
+						img {
+							position: absolute;
+							right: 16px;
+							top: 14px;
+						}
+					}
+					input,
+					select {
+						max-width: 414px;
+						width: 100%;
+						padding: 10px 14px;
+						border-radius: 8px;
+						font-weight: 400;
+						border: 1px solid $gray-100;
+					}
+				}
+			}
+
+			.select,
+			.select2 {
+				display: grid;
+				grid-template-columns: 1fr;
+				font-weight: 500;
+				gap: 6px;
+				font-size: 14px;
+				.menu-flags-button {
+					border: 1px solid $gray-100;
+					border-radius: 8px;
+					padding: 5px 12px 5px 5px;
+					.ReactFlagsSelect-module_selectValue__152eS {
+						font-size: 14px;
+						font-weight: 400;
+						color: $black-200;
+					}
+					.ReactFlagsSelect-module_selectFlag__2q5gC {
+						svg {
+							width: 24px;
+						}
+					}
+
+					.ReactFlagsSelect-module_label__27pw9 {
+						font-size: 14px;
+						font-weight: 400;
+						color: $black;
+					}
+				}
+			}
+			.select2 {
+				.ReactFlagsSelect-module_selectFlag__2q5gC {
+					display: none;
+				}
+				.ReactFlagsSelect-module_label__27pw9 {
+					padding: 0;
+				}
+			}
+			.terms {
+				display: flex;
+				gap: 12px;
+				margin-top: 10px;
+				p {
+					line-height: 18px;
+					font-size: 12px;
+					a {
+						color: $red-200;
+					}
+				}
+			}
+
+			.btn {
+				background: $red-200;
+				color: $white;
+				font-weight: 500;
+				max-width: 414px;
+				border-radius: 30px;
+				padding: 12px 20px;
+				margin-top: 18px;
+			}
+		}
+	}
+}

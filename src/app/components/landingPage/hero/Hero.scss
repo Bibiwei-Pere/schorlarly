@@ -1,0 +1,81 @@
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+.oyoyoHero {
+	background-image: url("../../assets/images/Bg-pattern.png");
+	.oyoyo {
+		height: auto;
+		position: relative;
+		max-width: 1380px;
+		width: 100%;
+		min-height: 400px;
+		top: 65px;
+		margin: auto;
+		border-radius: 50px;
+
+		@include md {
+			border-radius: 20px;
+		}
+
+		.hero {
+			z-index: 10;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			position: relative;
+			top: 100px;
+			gap: 25px;
+			padding: 0 25px;
+			@include md {
+				padding: 0 18px;
+			}
+			h1 {
+				color: $black;
+				max-width: 792px;
+				font-weight: 600;
+				font-size: 50px;
+				line-height: 1.2;
+				@include lg {
+					max-width: 592px;
+					font-size: 40px;
+				}
+				@include md {
+					font-size: 30px;
+				}
+			}
+			p {
+				max-width: 588px;
+				width: 100%;
+				@include lg {
+					max-width: 492px;
+				}
+			}
+			.new {
+				@include md {
+					font-size: 12px;
+				}
+			}
+			.check {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				@include md {
+					font-size: 12px;
+				}
+			}
+			.video {
+				max-width: 916px;
+				width: 100%;
+				box-shadow: 2px 2px 20px 2px $gray-200;
+				margin-top: 30px;
+				border-radius: 20px;
+				background: $black;
+				@include md {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}

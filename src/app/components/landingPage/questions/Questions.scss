@@ -1,0 +1,33 @@
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+.questions {
+	margin: 20px;
+	@include md {
+		top: 240px;
+		position: relative;
+		margin: 60px 18px 20px;
+	}
+	.bg {
+		position: relative;
+		max-width: 1380px;
+		width: 100%;
+		margin: auto;
+
+		@include lg {
+			height: auto;
+		}
+
+		.img {
+			border-radius: 24px;
+			position: absolute;
+			z-index: -10;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			@include md {
+				border-radius: 12px;
+			}
+		}
+	}
+}

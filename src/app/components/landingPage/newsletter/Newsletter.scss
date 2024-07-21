@@ -1,0 +1,36 @@
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+.newsletter {
+	width: 100%;
+	background: $gray-200;
+	margin-top: 100px;
+	position: relative;
+	@include md {
+		top: 260px;
+	}
+
+	.bg {
+		max-width: 1100px;
+		margin: auto;
+		padding: 80px 0;
+
+		.container {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 45px;
+			margin: auto;
+			padding: 0;
+			align-items: center;
+			justify-content: space-between;
+			@include lg {
+				padding: 0 50px;
+			}
+			@include md {
+				grid-template-columns: 1fr;
+				margin: 0;
+				padding: 0 23px;
+			}
+		}
+	}
+}

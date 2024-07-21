@@ -1,0 +1,60 @@
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+.pricing {
+	padding: 80px 25px 130px;
+	max-width: 1280px;
+	margin: auto;
+	position: relative;
+	top: 250px;
+	@include lg {
+		padding: 70px 25px 100px;
+	}
+	@include md {
+		top: 150px;
+		padding: 60px 18px 0;
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 45px;
+		align-items: start;
+		justify-content: start;
+		margin: 50px 0;
+		padding: 0;
+		@include md {
+			grid-template-columns: 1fr;
+			margin: 10px 0;
+			gap: 60px;
+		}
+
+		.wrapper1 {
+			display: flex;
+			flex-direction: column;
+			align-items: start;
+			justify-content: start;
+			gap: 5px;
+			margin: auto;
+			height: 100%;
+		}
+
+		.wrapper2 {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			gap: 25px;
+			@include md {
+				flex-direction: column;
+			}
+			.arrow {
+				position: absolute;
+				top: -30px;
+				right: 20px;
+				div {
+					rotate: -50deg;
+				}
+			}
+		}
+	}
+}

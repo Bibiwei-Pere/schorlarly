@@ -1,0 +1,90 @@
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+.footer {
+	width: 100%;
+	background: $black;
+	position: relative;
+	@include md {
+		top: 260px;
+	}
+
+	.bg {
+		max-width: 1100px;
+		margin: auto;
+		padding: 80px 0;
+
+		p {
+			color: $white !important;
+			font-weight: 400;
+		}
+
+		.container {
+			display: grid;
+			grid-template-columns: 1fr auto;
+			gap: 45px;
+			margin: auto;
+			padding: 0;
+			align-items: center;
+			justify-content: space-between;
+			@include lg {
+				padding: 0 50px;
+			}
+			@include md {
+				grid-template-columns: 1fr;
+				margin: 0;
+				padding: 0 23px;
+			}
+
+			.wrapper1 {
+				max-width: 320px;
+				display: flex;
+				flex-direction: column;
+				align-items: start;
+				gap: 30px;
+
+				div {
+					display: flex;
+					align-items: start;
+					justify-content: start;
+					gap: 35px;
+					flex-wrap: wrap;
+					a {
+						color: $white;
+						font-weight: 500;
+					}
+				}
+			}
+
+			.wrapper2 {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+				h3 {
+					color: $white;
+					text-align-last: left;
+					font-size: 20px !important;
+				}
+			}
+		}
+		.wrapper {
+			border-top: 1px solid $gray-100;
+			margin-top: 70px;
+			padding-top: 30px;
+			display: flex;
+			justify-content: space-between;
+			div {
+				display: flex;
+				gap: 20px;
+			}
+			@include lg {
+				padding: 30px 50px 0;
+			}
+			@include md {
+				flex-direction: column;
+				gap: 30px;
+				padding: 30px 23px 0;
+			}
+		}
+	}
+}
