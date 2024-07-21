@@ -1,17 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Button } from "@/components/ui/button";
 import "./Wallet.scss";
-import { title } from "process";
-import { DataTableDemo } from "@/components/ui/DataTable";
-import { TransactionsTable, TransactionTable } from "@/components/ui/TransactionsTable";
-import arrow-left-black from "@/app/components/assets/images/arrow-left-black.svg";
-import Image from "next/image";
 import { PayoutTable } from "@/components/ui/PayoutTable";
-import { PdisputeTable } from "@/components/ui/PdisputeTable";
 
 export const Wallet = () => {
 	const [active, setActive] = useState(false);
@@ -60,19 +51,7 @@ export const Wallet = () => {
 									<button className="mr-3 border rounded-[68px] mr-2 p-1 px-4 bg-red-500 text-white">Request Payout</button>
 								</span>
 							</div>
-							<div className="flex gap-[10px] mt-[30px]">
-								<div className="flex border rounded-md mr-2 p-1 px-4 ">
-									<Image src={arrow-left-black} alt={arrow-left-black} />
-									&nbsp;
-									<p>Last 7 days </p>
-								</div>
-								<div className="flex border rounded-md mr-2 p-1 px-4 ">
-									<Image src={calfill} alt={calfill} />
-									&nbsp;
-									<p>Filter</p>
-									<select name="#" id="#"></select>
-								</div>
-							</div>
+
 							<div></div>
 							{service.paymentTable}
 						</TabsContent>
