@@ -13,26 +13,18 @@ import { navContent } from "../../assets/data/Components";
 const Header = () => {
 	const [scroll, setScroll] = useState(false);
 	const [activeMenu, setActiveMenu] = useState("");
-	const handleMenu = () => {
-		setActiveMenu("active");
-	};
-	const handleClose = () => {
-		setActiveMenu("");
-	};
+
+	const handleMenu = () => setActiveMenu("active");
+	const handleClose = () => setActiveMenu("");
 
 	useEffect(() => {
 		window.addEventListener("scroll", handleScroll);
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
+		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 
 	const handleScroll = () => {
-		if (window.scrollY > 0) {
-			setScroll(true);
-		} else {
-			setScroll(false);
-		}
+		if (window.scrollY > 0) setScroll(true);
+		else setScroll(false);
 	};
 
 	return (
@@ -71,10 +63,10 @@ const Header = () => {
 							);
 						})}
 						<span className="flex w-full items-center px-0">
-							<Link target="_blank" rel="noopener noreferrer" href="auth/login" className="w-full">
+							<Link rel="noopener noreferrer" href="auth/login" className="w-full">
 								<Button variant={"secondary"}>Login in</Button>
 							</Link>
-							<Link target="_blank" rel="noopener noreferrer" href="auth/login" className="w-full">
+							<Link rel="noopener noreferrer" href="auth/signup" className="w-full">
 								<Button variant={"secondary"}>Sign up</Button>
 							</Link>
 						</span>

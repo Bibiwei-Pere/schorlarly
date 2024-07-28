@@ -1,0 +1,85 @@
+@import "../components/styles/responsive.scss";
+@import "../components/styles/variables.scss";
+
+.auth {
+	display: grid;
+	max-width: 1800px;
+	margin: auto;
+	grid-template-columns: repeat(3, 1fr);
+	min-height: 100vh;
+	@include md {
+		grid-template-columns: 1fr;
+	}
+
+	h2 {
+		font-weight: 600;
+		font-size: 30px;
+		line-height: normal;
+		@include xl {
+			font-size: 25px;
+		}
+		@include lg {
+			font-size: 23px;
+		}
+		@include md {
+			font-size: 20px;
+		}
+	}
+	p {
+		line-height: normal;
+		font-size: 18px;
+		@include xl {
+			font-size: 16px;
+		}
+		@include lg {
+			font-size: 15px;
+		}
+		@include md {
+			font-size: 14px;
+		}
+	}
+	a {
+		text-decoration: underline;
+		&:hover {
+			color: $blue-500;
+			p {
+				color: $blue-500;
+			}
+		}
+	}
+	.sidebar {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url("../components/assets/images/Sidebar.svg");
+		@include md {
+			display: none;
+		}
+	}
+
+	.wrapper {
+		grid-column: span 2;
+		padding: 80px 40px;
+		@include sm {
+			padding: 80px 20px;
+		}
+	}
+
+	.wrapper2 {
+		grid-column: span 3;
+		padding: 40px;
+		@include sm {
+			padding: 30px 20px;
+		}
+		.sub-wrapper {
+			padding: 150px 0;
+		}
+	}
+
+	.line {
+		display: grid;
+		grid-template-columns: 1fr 50px 1fr;
+		align-items: center;
+		width: 100%;
+		margin-top: 10px;
+	}
+}

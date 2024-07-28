@@ -31,11 +31,11 @@ h1 {
 
 h2 {
 	color: $black;
-	font-weight: 600 !important;
-	font-size: 28px !important;
+	font-weight: 600;
+	font-size: 28px;
 	text-align: center;
 	@include md {
-		font-size: 20px !important;
+		font-size: 20px;
 	}
 }
 
@@ -103,13 +103,27 @@ p {
 
 ::-webkit-scrollbar {
 	width: 2px !important;
-	// background-color: transparent;
-	background-color: $gray-400;
+	background-color: transparent;
 	height: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
-	// background-color: transparent;
-	background-color: $red-200;
+	background-color: $gray-100;
 	border-radius: 20px;
+}
+
+.custom-input {
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+
+	input[type="file"] {
+		position: absolute;
+		border: 2px solid;
+		opacity: 0;
+	}
 }

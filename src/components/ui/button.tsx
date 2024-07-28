@@ -9,7 +9,7 @@ const buttonVariants = cva("flex max-w-[200px] w-full items-center mx-auto justi
 		variant: {
 			default: "bg-gradient-to-b from-[#006DB4] text-primary-foreground hover:bg-primary/90",
 			secondary: "bg-white text-black hover:bg-blue-900 hover:text-white",
-			outline: "bg-white text-black border border-gray-300 hover:bg-blue-900 hover:border-blue-900 hover:text-white",
+			outline: "bg-white text-black border border-gray-200 shadow-sm hover:bg-blue-900 hover:border-blue-900 hover:text-white",
 			destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
 			ghost: "hover:bg-accent hover:text-accent-foreground",
 			link: "text-primary underline-offset-4 hover:underline",
