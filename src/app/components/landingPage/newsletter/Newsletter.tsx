@@ -1,12 +1,6 @@
 import React from "react";
-import Logo from "../../assets/images/LogoWhite.png";
 import "./Newsletter.scss";
-import Image from "next/image";
-import Googlestore from "../../assets/images/Googlestore.svg";
-import Appstore from "../../assets/images/Appstore.svg";
-import Link from "next/link";
-import { FacebookIcon, Instagram, Youtube } from "lucide-react";
-import { Reveal3, Reveal5 } from "../../animations/Text";
+import { Reveal3 } from "../../animations/Text";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 

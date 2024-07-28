@@ -18,7 +18,8 @@ export const Reveal1 = ({ children, width = "fit-content" }: Props) => {
 			mainControls.start("visible");
 			slideControls.start("visible");
 		}
-	}, [isInView]);
+	}, [isInView, mainControls, slideControls]);
+
 	return (
 		<div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
 			<motion.div
@@ -65,7 +66,8 @@ export const Reveal2 = ({ children, width = "fit-content" }: Props) => {
 			mainControls.start("visible");
 			slideControls.start("visible");
 		}
-	}, [isInView]);
+	}, [isInView, mainControls, slideControls]);
+
 	return (
 		<div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
 			<motion.div
@@ -92,7 +94,7 @@ export const Reveal3 = ({ children, width = "fit-content" }: Props) => {
 		if (isInView) {
 			mainControls.start("visible");
 		}
-	}, [isInView]);
+	}, [isInView, mainControls]);
 	return (
 		<div>
 			<motion.div style={{ position: "relative", width, overflow: "hidden" }} initial={{ opacity: 0, y: 75 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.25 }}>
@@ -113,7 +115,8 @@ export const Reveal4 = ({ children, width = "fit-content" }: Props) => {
 			mainControls.start("visible");
 			slideControls.start("visible");
 		}
-	}, [isInView]);
+	}, [isInView, mainControls, slideControls]);
+
 	return (
 		<div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
 			<motion.div
@@ -160,7 +163,8 @@ export const Reveal5 = ({ children, width = "fit-content" }: Props) => {
 			mainControls.start("visible");
 			slideControls.start("visible");
 		}
-	}, [isInView]);
+	}, [isInView, mainControls, slideControls]);
+
 	return (
 		<div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
 			<motion.div

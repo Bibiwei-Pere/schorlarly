@@ -1,9 +1,7 @@
 import "./Hero.scss";
 import React from "react";
-import bg from "../../assets/images/andrea-mininni.jpg";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import Image from "next/image";
 import { Reveal1, Reveal3 } from "../../animations/Text";
 import { PlayCircle } from "lucide-react";
 import MuxPlayer from "@mux/mux-player-react";

@@ -24,14 +24,6 @@ interface CardWalletProp {
 	title: string;
 	header: string;
 }
-interface CardWalletProp2 {
-	icon: any;
-	icon2: any;
-	title: string;
-	header: string;
-	percent: string;
-	price: string;
-}
 
 const CardWallet = ({ title, header }: CardWalletProp) => {
 	return (
@@ -41,30 +33,5 @@ const CardWallet = ({ title, header }: CardWalletProp) => {
 		</div>
 	);
 };
-const CardWallet2 = ({ title, icon, icon2, header, percent, price }: CardWalletProp2) => {
-	return (
-		<div className="cardWallet2 relative flex flex-col p-[15px] gap-[20px] border border-gray-100">
-			<div className="flex items-center gap-2">
-				<div className="icon flex relative items-center justify-center icon w-[25.68px] h-[25.68px] rounded-full">
-					<div className="iconDetails flex items-center justify-center w-[16px] h-[16px] rounded-full">{icon}</div>
-				</div>
-				<p className="text-[12.5px] font-semibold">{title}</p>
-			</div>
-			<div className="flex flex-col gap-1">
-				<h2>{header}</h2>
 
-				<div className="flex items-center gap-1 justify-between">
-					<div className="flex items-center gap-1">
-						<div className="icon2 w-[17px] h-[17px] rounded-full p-[1px]">{icon2}</div>
-						<h4>{percent}%</h4>
-					</div>
-					<div className="flex items-center gap-1">
-						<h4>+{price}</h4>
-						<h4>this week</h4>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
-};
-export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent, CardWallet, CardWallet2 };
+export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent, CardWallet };

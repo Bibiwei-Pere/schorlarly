@@ -1,6 +1,6 @@
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
-import { CheckIcon, XCircle, ChevronDown, XIcon, WandSparkles } from "lucide-react";
+import { CheckIcon, XCircle, ChevronDown, XIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
@@ -37,10 +37,10 @@ interface MultiSelectProps extends React.ButtonHTMLAttributes<HTMLButtonElement>
 	className?: string;
 }
 
-export const MultiSelect = React.forwardRef<HTMLButtonElement, MultiSelectProps>(({ options, onValueChange, variant, defaultValue = [], placeholder = "Select options", animation = 0, maxCount = 3, asChild = false, className, ...props }, ref) => {
+export const MultiSelect = React.forwardRef<HTMLButtonElement, MultiSelectProps>(({ options, onValueChange, variant, defaultValue = [], placeholder = "Select options", animation = 0, maxCount = 3, className, ...props }, ref) => {
 	const [selectedValues, setSelectedValues] = React.useState<string[]>(defaultValue);
 	const [isPopoverOpen, setIsPopoverOpen] = React.useState(false);
-	const [isAnimating, setIsAnimating] = React.useState(false);
+	const [isAnimating] = React.useState(false);
 
 	React.useEffect(() => {
 		if (JSON.stringify(selectedValues) !== JSON.stringify(defaultValue)) {

@@ -20,9 +20,9 @@ export default function RootLayout({
 		setSelected(storedSelected ? parseInt(storedSelected) : 0);
 	}, []);
 
-	const handleClick = (index: any) => {
+	const handleClick = (index: number): void => {
 		setSelected(index);
-		localStorage.setItem("selected", index);
+		localStorage.setItem("selected", index.toString()); // ensure the value is stored as string
 	};
 
 	return (
@@ -37,7 +37,7 @@ export default function RootLayout({
 					<p className="pl-2 mb-3">General</p>
 					<div className="flex flex-col gap-2.5">
 						{dashSidebar.map((sidebar, index) => (
-							<Link href={sidebar.url} title={sidebar.title} className={selected === index ? "flex px-2 py-1 gap-3 items-center rounded-md bg-gray-100" : "flex px-2 py-1 gap-3 items-center rounded-md hover:bg-gray-100"} onClick={() => handleClick(index)}>
+							<Link href={sidebar.url} key={index} title={sidebar.title} className={selected === index ? "flex px-2 py-1 gap-3 items-center rounded-md bg-gray-100" : "flex px-2 py-1 gap-3 items-center rounded-md hover:bg-gray-100"} onClick={() => handleClick(index)}>
 								<sidebar.icon className="text-gray-500 w-5" />
 								<p className="text-black font-[400]">{sidebar.title}</p>
 							</Link>

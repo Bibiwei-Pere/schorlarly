@@ -19,7 +19,6 @@ import Avatar25 from "../../components/assets/images/avatar25.png";
 import { ArrowUpFromLineIcon } from "lucide-react";
 import Logo from "../../components/assets/images/Logo.png";
 import Gmail from "../../components/assets/images/gmail.png";
-import Alert from "../../components/assets/images/Alert.png";
 
 const SignUp = () => {
 	const [imageUrl, setImageUrl] = React.useState("");
@@ -40,9 +39,9 @@ const SignUp = () => {
 		console.log(data);
 	}
 
-	const handleFileChange = (event: any) => {
+	const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		event.preventDefault();
-		const file = event.target.files[0];
+		const file = event.target.files?.[0]; // Optional chaining to safely access files
 		if (file) {
 			const url = URL.createObjectURL(file);
 			setImageUrl(url);
@@ -132,7 +131,7 @@ const SignUp = () => {
 											<h2 className="text-left">Tell us about yourself</h2>
 											<div className="flex gap-4 mt-8 mb-5">
 												<Avatar>
-													<AvatarFallback>{imageUrl ? <img src={imageUrl} alt="Selected" className="w-full h-full" /> : <Image src={Avatar25} alt="Avatar25" />}</AvatarFallback>
+													<AvatarFallback>{imageUrl ? <Image src={imageUrl} alt="Selected" className="w-full h-full" /> : <Image src={Avatar25} alt="Avatar25" />}</AvatarFallback>
 												</Avatar>
 												<div>
 													<p className="text-black mb-3">Profile picture</p>
