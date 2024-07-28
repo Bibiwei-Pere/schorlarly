@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const Experience = () => {
 	return (
-		<section className="experience">
+		<section className="experience landing">
 			<div className="landingHeader">
 				<p className="text-[13px]">A Guided Tour of Powerful Features</p>
 				<Reveal1>

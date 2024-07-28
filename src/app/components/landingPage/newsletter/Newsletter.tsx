@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 const Newsletter = () => {
 	return (
-		<div className="newsletter">
+		<div className="newsletter landing">
 			<section className="bg">
 				<div className="container">
 					<div className="flex flex-col gap-2 items-start">
@@ -17,7 +17,7 @@ const Newsletter = () => {
 					</div>
 					<div className="flex flex-col gap-2">
 						<div className="flex items-center gap-2">
-							<Input className="m-0" placeholder="Enter your email" />
+							<Input className="bottom-0 bg-white" placeholder="Enter your email" />
 							<Button className="max-w-[100px]">Subscribe</Button>
 						</div>
 						<p className="text-sm">We care about your data in our privacy policy.</p>

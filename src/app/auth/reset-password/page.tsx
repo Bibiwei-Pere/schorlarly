@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Logo from "../../components/assets/images/Logo.png";
+import Logo from "../../components/assets/images/Logo.svg";
 import "../Auth.scss";
 import { formPasswordReset } from "@/app/components/schema/Forms";
 import { zodResolver } from "@hookform/resolvers/zod";

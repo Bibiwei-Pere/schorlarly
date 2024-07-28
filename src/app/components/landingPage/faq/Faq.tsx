@@ -5,7 +5,7 @@ import { Reveal1 } from "../../animations/Text";
 
 const Faq = () => {
 	return (
-		<section className="faq">
+		<section className="faq landing">
 			<div className="landingHeader">
 				<Reveal1>
 					<h2>Frequently asked questions</h2>

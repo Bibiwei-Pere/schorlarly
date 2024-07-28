@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 const PricingPage = () => {
 	return (
-		<section className="pricing">
+		<section className="pricing landing">
 			<div className="container">
 				<div className="wrapper1">
 					<p>Upgrade</p>

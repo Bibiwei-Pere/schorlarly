@@ -17,7 +17,7 @@ import { AvatarFallback } from "@radix-ui/react-avatar";
 import { Avatar } from "@/components/ui/avatar";
 import Avatar25 from "../../components/assets/images/avatar25.png";
 import { ArrowUpFromLineIcon } from "lucide-react";
-import Logo from "../../components/assets/images/Logo.png";
+import Logo from "../../components/assets/images/Logo.svg";
 import Gmail from "../../components/assets/images/gmail.png";
 
 const SignUp = () => {

@@ -17,6 +17,9 @@
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 		.container {
 			padding: 10px 33px 0px;
+			@include md {
+				padding: 10px 20px 0;
+			}
 		}
 		.hamburger {
 			g {
@@ -33,7 +36,7 @@
 		padding: 20px 33px;
 		margin: auto;
 		@include md {
-			padding: 20px 18px;
+			padding: 20px 20px;
 		}
 
 		.logo {
@@ -78,7 +81,8 @@
 					.dark_bg {
 						position: absolute;
 						min-height: 100vh;
-						background-color: $gray-300;
+						background-color: rgba(0, 0, 0, 0.3);
+						opacity: 0.6;
 						top: 0;
 						bottom: 0;
 						right: 0;

@@ -8,7 +8,7 @@
 	position: relative;
 	top: 250px;
 	@include lg {
-		padding: 70px 25px 100px;
+		padding: 70px 25px 170px;
 	}
 	@include md {
 		top: 150px;
@@ -23,6 +23,11 @@
 		justify-content: start;
 		margin: 50px 0;
 		padding: 0;
+		@include lg {
+			grid-template-columns: 1fr;
+			margin: 10px 0;
+			gap: 80px;
+		}
 		@include md {
 			grid-template-columns: 1fr;
 			margin: 10px 0;
@@ -37,6 +42,9 @@
 			gap: 5px;
 			margin: auto;
 			height: 100%;
+			@include lg {
+				margin: 0;
+			}
 		}
 
 		.wrapper2 {
@@ -44,6 +52,9 @@
 			display: flex;
 			align-items: center;
 			gap: 25px;
+			@include lg {
+				justify-content: center;
+			}
 			@include md {
 				flex-direction: column;
 			}

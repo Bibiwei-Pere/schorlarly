@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/images/LogoWhite.png";
+import Logo from "../../assets/images/LogoWhite.svg";
 import "./Footer.scss";
 import Image from "next/image";
 import Googlestore from "../../assets/images/Googlestore.svg";
