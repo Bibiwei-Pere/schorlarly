@@ -16,19 +16,6 @@ a {
 	cursor: pointer;
 }
 
-h1 {
-	color: $white;
-	font-size: 100px;
-	line-height: 0.8;
-	@include lg {
-		font-size: 90px;
-		line-height: 1;
-	}
-	@include md {
-		font-size: 50px;
-	}
-}
-
 .landing {
 	h2 {
 		color: $black;
@@ -54,9 +41,11 @@ h1 {
 
 	h4 {
 		color: $black;
-		font-size: 17px !important;
-		font-weight: 600 !important;
+		font-size: 17px;
+		font-weight: 600;
 		margin: 20px 0 5px;
+		line-height: normal;
+		text-align: center;
 		@include lg {
 			font-size: 15px;
 		}
@@ -67,6 +56,14 @@ h1 {
 		line-height: 1.5;
 		@include md {
 			font-size: 14px;
+		}
+	}
+	.headText {
+		color: $gray-300;
+		font-size: 14px;
+		line-height: 1.5;
+		@include md {
+			font-size: 12.5px;
 		}
 	}
 }

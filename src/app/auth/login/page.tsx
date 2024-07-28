@@ -72,24 +72,20 @@ const Login = () => {
 									<p className="text-black">Remember me</p>
 								</div>
 
-								<Link href="reset-password">
-									<p className="text-black">Forgot password?</p>
-								</Link>
+								<Link href="reset-password">Forgot password?</Link>
 							</div>
 
-							<Button type="submit" className="max-w-full mt-6">
+							<Button type="submit" className="max-w-full mt-6 mb-3">
 								Login
 							</Button>
 
-							<Link href="signup">
-								<p className="text-black text-center mt-6">I don’t have an account</p>
-							</Link>
+							<Link href="signup">I don’t have an account</Link>
 						</form>
 					</Form>
 
 					<div className="flex flex-col gap-3 mt-20">
-						<Label className="text-center text-gray-500 max-w-[430px] leading-normal">By proceeding you acknowledge that you have read, understood and agree to our Terms and Conditions and Privacy Policy</Label>
-						<Label className="text-center text-gray-500">© 2023 Scholarly</Label>
+						<p className="text-center max-w-[430px] leading-normal">By proceeding you acknowledge that you have read, understood and agree to our Terms and Conditions and Privacy Policy</p>
+						<p className="text-center">© 2023 Scholarly</p>
 					</div>
 				</div>
 			</div>

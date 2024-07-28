@@ -41,6 +41,17 @@
 	}
 	a {
 		text-decoration: underline;
+		text-align: center;
+		font-size: 18px;
+		@include xl {
+			font-size: 16px;
+		}
+		@include lg {
+			font-size: 15px;
+		}
+		@include md {
+			font-size: 14px;
+		}
 		&:hover {
 			color: $blue-500;
 			p {

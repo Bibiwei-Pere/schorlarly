@@ -11,7 +11,7 @@ const Experience = () => {
 	return (
 		<section className="experience landing">
 			<div className="landingHeader">
-				<p className="text-[13px]">A Guided Tour of Powerful Features</p>
+				<div className="headText">A Guided Tour of Powerful Features</div>
 				<Reveal1>
 					<h2>A seamless experience for users</h2>
 				</Reveal1>

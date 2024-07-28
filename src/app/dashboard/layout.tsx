@@ -34,7 +34,7 @@ export default function RootLayout({
 				</div>
 				<Button className="sideBtn max-w-full">New project</Button>
 				<div>
-					<p className="pl-2 mb-3">General</p>
+					<p className="pl-2 mb-3 text-gray-500">General</p>
 					<div className="flex flex-col gap-2.5">
 						{dashSidebar.map((sidebar, index) => (
 							<Link href={sidebar.url} key={index} title={sidebar.title} className={selected === index ? "flex px-2 py-1 gap-3 items-center rounded-md bg-gray-100" : "flex px-2 py-1 gap-3 items-center rounded-md hover:bg-gray-100"} onClick={() => handleClick(index)}>

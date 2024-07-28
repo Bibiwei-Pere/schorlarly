@@ -10,7 +10,7 @@ const PricingPage = () => {
 		<section className="pricing landing">
 			<div className="container">
 				<div className="wrapper1">
-					<p>Upgrade</p>
+					<div className="headText">Upgrade</div>
 					<h2>Pricing plans that scale</h2>
 					<Reveal2>
 						<p className="my-1">Simple, transparent pricing that grows with you. Try any plan free for 30 days.</p>

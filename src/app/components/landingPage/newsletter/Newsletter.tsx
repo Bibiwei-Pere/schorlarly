@@ -9,7 +9,7 @@ const Newsletter = () => {
 		<div className="newsletter landing">
 			<section className="bg">
 				<div className="container">
-					<div className="flex flex-col gap-2 items-start">
+					<div className="flex flex-col gap-2 items-start justify-start">
 						<h2>Sign up for our newsletter</h2>
 						<Reveal3>
 							<p>Be the first to know about releases and research news and insights.</p>

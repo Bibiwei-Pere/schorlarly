@@ -46,12 +46,17 @@
 				}
 			}
 			p {
+				color: $gray-300;
 				max-width: 588px;
+				line-height: 1.5;
+				font-size: 18px;
 				width: 100%;
 				@include lg {
+					font-size: 15px;
 					max-width: 492px;
 				}
 			}
+
 			.new {
 				@include md {
 					font-size: 12px;

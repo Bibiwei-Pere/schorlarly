@@ -7,7 +7,7 @@ const Features = () => {
 	return (
 		<section className="features landing">
 			<div className="landingHeader">
-				<p>Features</p>
+				<div className="headText">Features</div>
 				<Reveal1>
 					<h2>Experience Excellence with Premium Benefits</h2>
 				</Reveal1>
